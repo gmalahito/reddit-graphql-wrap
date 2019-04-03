@@ -36,7 +36,6 @@ const  schema =  buildSchema(`
     url: String!
     score: Float!
     subreddit_name_prefixed: String!
-    subreddit_id
   }
 
   type Subreddit{
@@ -60,7 +59,7 @@ const resolver = {
   posts: (args) => {
     let url = `${REDDITURL}`;
     const {subreddit, category, search, limit} = args;
-     console.log(search);
+
     if(search !== null && search.trim() !== ''){
         url = subreddit ?  `${url}${subreddit}search?${qs.stringify({q:search})}` :  `${url}/search?${qs.stringify({q:search})}`;
     }
@@ -84,13 +83,9 @@ const resolver = {
   subreddits: (args) => {
     const {limit} = args;
     let url = `${REDDITURL}/subreddits`;
-
-
-     if(limit){
+    if(limit){
       url = `${url}?limit=${limit}`;
     }
-
-
      console.log(url);
 
     return get(url)

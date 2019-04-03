@@ -1,0 +1,32 @@
+.subreddit__posts__item{
+  margin: 0.1rem 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+
+.subreddit__posts__item{
+  font-size: 20px;
+}
+
+.subreddit__posts__item a{
+  color: orangered;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.subreddit__posts__item a:hover{
+  text-decoration: underline;
+}
+
+.subreddit__posts__item__score{
+  font-weight: bold;
+  color: orangered;
+  width: 220px;
+}
+
+.subreddit__posts__item__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,21 @@
+.subreddit__list__item{
+  margin: 0.1rem 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+
+
+.subreddit__list__item button{
+  padding: 6px 8px;
+  background-color: transparent;
+  border: none;
+  padding:0;
+  color:orangered;
+}
+
+.subreddit__list__item button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+

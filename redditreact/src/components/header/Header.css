@@ -1,0 +1,38 @@
+.subreddit__header{
+  background: orangered;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.subreddit__header__form input{
+  padding: 5px 8px;
+  min-width: 250px;
+}
+
+.subreddit__header__form button{
+  padding: 6px 8px;
+  background-color: #fff;
+  margin-left: 2px;
+  border: 1px solid #ccc;
+}
+
+.subreddit__header__form button:hover{
+  cursor: pointer;
+}
+
+.subreddit__header__filter label{
+  color:#fff;
+  margin-right: 5px;
+}
+
+.subreddit__header__filter select{
+   height: 28px;
+   padding: 6px 8px;
+}
+
+.subreddit__header__subreddit{
+  text-align: center;
+}
